@@ -46,27 +46,25 @@ router.get( '/page/:pageId', function(request, response){
                                                 <div class="DetailTitleContainer">
                                                     ${fbTitle}
                                                 </div>
-                                                <hr>
-                                                <div>
+                                                <div class="DetailName">
                                                     <p>${name}</p>
-                                                    <p>${time}</p>
-                                                </div>
-                                                <hr>
-                                                <div>
+                                                    <p>작성일: ${time}</p>
+                                                </div>                                                
+                                                <div class="DetailDescription">
                                                     ${description}
                                                 </div>
-                                                <hr>
-                                                <div class="text-sm-end">
-                                                    <form action="/freeboard/update" method="post" >
-                                                        <input type="hidden" name="id" value="${free[0].id}">
-                                                        <input type="submit" class="btn btn-secondary" value="update">
-                                                    </form>
-                                                    <form action="/freeboard/delete_process" method="post">
-                                                        <input type="hidden" name="id" value="${free[0].id}">
-                                                        <input type="submit" class="btn btn-secondary" value="delete">
-                                                    </form>
-                                                </div>    
                                             </div>
+                                            <div class="text-sm-end m-2">
+                                                <a href="/freeboard" class="btn btn-success">목록</a>
+                                                <form action="/freeboard/update" method="post" style="display:inline; ">
+                                                    <input type="hidden" name="id" value="${free[0].id}">
+                                                    <input type="submit" class="btn btn-success" value="수정">
+                                                </form>
+                                                <form action="/freeboard/delete_process" method="post" style="display:inline; ">
+                                                    <input type="hidden" name="id" value="${free[0].id}">
+                                                    <input type="submit" class="btn btn-secondary" value="삭제">
+                                                </form>
+                                            </div>    
                                             <br></br>`, 
             `` , fBList ,auth.authStatusUI(request, response) );
         

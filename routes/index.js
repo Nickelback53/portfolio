@@ -12,7 +12,7 @@ router.get('/', function(req, res){
         var description = '';
 
         var homeTag = template.homeTag();
-        //var list = template.list(topics);
+
         var html = template.HTMLHome(title, '',
              `<div class="name text-center">
                 <h2>${title}</h2>
@@ -27,6 +27,5 @@ router.get('/', function(req, res){
     });
 });
 
-//<img  src="images/hello.jpeg" class="img-fluid" alt="Responsive image"></img>
 
 module.exports = router;

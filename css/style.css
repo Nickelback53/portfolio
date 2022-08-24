@@ -259,6 +259,30 @@ div {
 }
 
 .DetailContainer {
-    background-color: bisque;
-    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid #AAAAAA;
+}
+
+.DetailTitleContainer{
+    line-height: 1.4em;
+    text-indent: 0.5em;
+}
+
+.DetailName{
+    border-top: 1px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;
+    margin: 10px 0;
+    text-indent: 0.5em;
+}
+.DetailDescription {
+    min-height: 440px;
+    padding: 10px 5px 20px 5px;
+}
+
+.content-control-box{
+    display:inline;
+}
+
+body {
+    font-family: 'Sunflower', sans-serif;
 }
