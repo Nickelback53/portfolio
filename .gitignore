@@ -1,0 +1,5 @@
+#노드 모듈들
+node_modules/
+
+#DB 정보
+config/
