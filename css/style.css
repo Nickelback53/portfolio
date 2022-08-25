@@ -283,6 +283,8 @@ div {
     display:inline;
 }
 
-body {
-    font-family: 'Sunflower', sans-serif;
+
+
+.table>tbody {
+    vertical-align:middle;
 }

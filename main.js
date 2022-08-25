@@ -10,14 +10,15 @@ var indexRouter = require('./routes/index');
 var authRouter = require('./routes/auth');
 var fBRouter = require('./routes/freeBoard');
 var sessionMySQL = require('./lib/session');
+var path = require('path');
 
 const app = express();
-const port = 3000;
+const port = 8080;
 
 
 
-app.use(express.static('public')); 
-app.use(express.static('css')); 
+app.use(express.static(path.join(__dirname, 'public'))); 
+app.use(express.static(path.join(__dirname, 'css'))); 
 app.use(bodyparser.urlencoded({extended: false}));
 
 

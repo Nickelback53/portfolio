@@ -33,7 +33,7 @@ router.get('/login', function(req, res){
 })
 
 router.post('/login_process', function(req, res){
-    console.log(req.body);
+    
     var email = req.body.email;
     var password = req.body.password;
 
